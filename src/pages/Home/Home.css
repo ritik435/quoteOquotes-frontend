@@ -1,0 +1,28 @@
+main {
+  padding: 2rem;
+}
+.hero-text {
+  line-height: 1.5;
+}
+.hero-text > h3 {
+  margin: 1rem auto;
+}
+.quote-sec {
+  margin: 1rem auto;
+  text-align: center;
+}
+.shuffle-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+@media (min-width: 769px) {
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+}
