@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: grey;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.navigation {
+  display: flex;
+  justify-content: end;
+  flex-basis: 50%;
+}
+.menu {
+  display: none; /* Hide the navigation menu by default in smaller screens */
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.nav-ul__link {
+  flex-basis: 80%;
+}
+.menu a {
+  text-decoration: none;
+}
+.menu button {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  border: none;
+}
+
+.menu.active {
+  display: flex; /* Show the navigation menu when burger menu is active */
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  padding: 16px;
+}
+.burger {
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.burger-line {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  margin: 4px;
+}
+.active .burger-line {
+  /* Style for the burger button when it's active (menu is open) */
+  background-color: #fff;
+}
+@media (min-width: 769px) {
+  .navigation {
+    justify-content: space-between;
+  }
+  .burger {
+    display: none; /* Hide the burger button in wider screens */
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+}
