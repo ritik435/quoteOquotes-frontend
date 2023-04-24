@@ -1,14 +1,11 @@
 import React from "react";
 import "./QuoteCard.css";
 
-const QuoteCard = () => {
+const QuoteCard = ({ quote }) => {
   return (
     <div className="card">
-      <p>
-        Honesty is the best policy Honesty is the best policyHonesty is the best
-        policy Honesty is the best policy Honesty is the best policyHonesty is
-        the best policy
-      </p>
+      <p>{quote.slogan}</p>
+      <h6>~ {quote.credits} ~</h6>
     </div>
   );
 };

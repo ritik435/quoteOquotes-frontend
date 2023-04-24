@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
-  const isAuthenticated = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
